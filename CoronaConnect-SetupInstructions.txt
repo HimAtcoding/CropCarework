@@ -1,0 +1,32 @@
+Dear Judges,
+Hope you are having a great day!
+Thank you for reviewing our project and we hope you like it.
+Thank You,
+Project Name: CoronaConnect
+
+
+Instructions:
+Please download all files in the CoronaConnect file folder to fully experience our UI. All files under Assets, CSS and data folders are required.
+Start with home-page.html to test our web application. You will need a mysql server and a webserver.
+
+How to setup the database:
+Please set up a database named 'hack' and run the query below to setup the table.
+
+CREATE TABLE `tagdetails` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `streetnumber` varchar(30) DEFAULT NULL,
+  `streetname` varchar(30) DEFAULT NULL,
+  `city` varchar(50) DEFAULT NULL,
+  `state` varchar(2) DEFAULT NULL,
+  `zipcode` varchar(10) DEFAULT NULL,
+  `country` varchar(20) DEFAULT NULL,
+  `question1` tinyint(1) DEFAULT NULL,
+  `question2` tinyint(1) DEFAULT NULL,
+  `question3` tinyint(1) DEFAULT NULL,
+  `comments` varchar(100) DEFAULT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8
+
+ 
+
