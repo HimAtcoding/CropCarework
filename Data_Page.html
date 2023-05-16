@@ -390,35 +390,27 @@ function geolocate() {
 
 
 
-<!-- CSS -->
-<style type="text/css">
-  table th, table td{
-  padding: 5px;
-}
-</style>
-
-<div>
-
-  <div>
-       <input type="file" name="file" id="file" accept=".csv" > <br><br>
-       <input type="button" id="btnsubmit" value="Submit" onclick="readCSVFile();" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width-device-width, initial-scale-1.0">
+  <title>Data Aspects</title>
+</head>
+  <div class='container'>
+    <div class='card'>
+      <img width='150' src='Downloads/FireMan.png' alt=''>
+      <h1>Temperature Stats</h1>
+      <p>This is where data extracted relevant to temperature statistics from the robot is to be outputted, click the button to refresh and examine the temperature</p>
+      <a href="a">
+        <button>Click me</button>
+        <h1 id="output" style="text-align: center">Temperature:</h1>
+        <script src="script.js"></script>
+      </a>
+    </div>
   </div>
 
-  <br><br>
-  <!-- List CSV file data -->
-  <table id="tblcsvdata" border="1" style="border-collapse: collapse;">
-       <thead>
-            <tr>
-                <th>Time</th>
-                <th>Temperature</th>
-            </tr>
-       </thead>
-       <tbody>
 
-       </tbody>
 
-  </table>
-</div>
 
 </body>
 
